@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Payslip Parser
-Reads Capgemini payslip PDFs from ./payslips/ and writes payslip_data.xlsx.
+Reads payslip PDFs from ./payslips/ and writes payslip_data.xlsx.
 
 Usage:
     python3 parse.py                        # parse all PDFs
@@ -54,7 +54,7 @@ def classify(name):
 
 # ── Payslip ───────────────────────────────────────────────────────────────────
 
-# Column x-boundaries (consistent across all SDWorx payslip PDFs)
+# Column x-boundaries (consistent across the supported payslip PDF layout)
 _COL2_X = 200   # Deductions column starts here
 _COL3_X = 370   # Totals & Balances column starts here
 _Y_TOL  = 3     # pixels tolerance for grouping words into the same row

@@ -49,7 +49,7 @@ payslip-parser/
 
 ## Payslip Format
 
-The parser is calibrated for **SDWorx**-generated payslip PDFs (used by Capgemini). It uses `pdfplumber` word-level coordinate extraction to split the three-column table layout (Pay & Allowances | Deductions | Totals & Balances) rather than relying on raw text order.
+The parser uses `pdfplumber` word-level coordinate extraction to split the three-column table layout (Pay & Allowances | Deductions | Totals & Balances) rather than relying on raw text order. It is calibrated for the SDWorx payslip PDF format.
 
 Pay items (e.g. overtime, bonus, allowances) are discovered dynamically — any item that appears in the Allowances column is added as a column in the output, so the sheet adapts to payslips with different structures.
 

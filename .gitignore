@@ -3,6 +3,10 @@ payslips/
 *.xlsx
 *.xls
 
+# Claude Code
+.claude/
+CLAUDE.md
+
 # Python
 __pycache__/
 *.py[cod]
